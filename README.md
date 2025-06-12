@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+<h1 align="center">🔥 TrackEase – Habit Tracker</h1>
 
-## Project info
+<p align="center">
+  <em>“Just like an anime hero trains every day, level up your life one habit at a time!”</em> 💪🌟
+</p>
 
-**URL**: https://lovable.dev/projects/1265a437-3b3f-4bb9-b6f9-66cc8cdf31f6
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTBtYmtuOGY2OGI5ODRjazRkOWl2YTFqNzE4Z3I4ZGY5MzRoc3Z1biZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lw6H7vUDxeyB4UQDV5/giphy.gif" height="200"/>
+</p>
 
-## How can I edit this code?
+<p align="center">
+  A minimal and powerful habit tracking web app with <strong>Supabase Auth</strong>, <strong>calendar heatmap</strong>, and <strong>habit leveling system</strong>. Built for consistency and self-growth 📆🚀
+</p>
 
-There are several ways of editing your application.
+<p align="center">
+  <a href="https://chris-habit-tracker.vercel.app/login" target="_blank">
+    <img src="https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=vercel" />
+  </a>
+  <img src="https://img.shields.io/badge/Auth-Supabase-3ECF8E?style=for-the-badge&logo=supabase" />
+  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react" />
+</p>
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1265a437-3b3f-4bb9-b6f9-66cc8cdf31f6) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- ✅ **Register & Login** with Supabase Auth  
+- 📅 **Create and manage** custom habits  
+- 🟩 Interactive **calendar heatmap** for habit streaks  
+- 🔒 **Lock** daily habit check-ins  
+- ⏫ **Level-up system**: Every 10 completions = 1 level  
+- 📊 Real-time **habit status tracking**  
+- 💾 Persistent storage with **Supabase Database**  
+- ⚡ Deployed live on **Vercel**  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧱 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Layer      | Technology                          |
+|------------|-------------------------------------|
+| Frontend   | React, Tailwind CSS                 |
+| Auth       | Supabase Auth                       |
+| Database   | Supabase PostgreSQL + RPC Functions |
+| Hosting    | Vercel                              |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Live Demo
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🔗 [**TrackEase App**](https://chris-habit-tracker.vercel.app/login) – Try it out!
 
-# Step 3: Install the necessary dependencies.
-npm i
+Create a test account, start a habit, and track it like a hero!
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## 📸 Screenshots
+
+> *(Add these images in a `/screenshots` folder in your repo)*
+
+```md
+![Login Page](./screenshots/login.png)
+![Dashboard](./screenshots/dashboard.png)
+![Heatmap Example](./screenshots/heatmap.png)
+🧩 How It Works
+🔐 Authentication
+Secure login/signup via Supabase Email Auth
+
+Session persists via Supabase client
+
+💡 Habit Management
+Users can create, edit, and delete habits
+
+Each habit has a calendar heatmap for daily tracking
+
+🎯 Leveling System
+Every 10 completions increases the habit level
+
+Level visually represented in the dashboard
+
+📆 Daily Commit & Lock
+Check a date to mark habit complete
+
+Once checked, it gets locked to avoid changes
+
+📁 Folder Structure
+bash
+Copy
+Edit
+track-ease-habit-main/
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── pages/
+│   ├── services/        # Supabase API logic
+│   └── App.jsx
+├── supabase/            # Supabase client config
+├── .env
+└── README.md
+📦 Getting Started
+1. Clone the repo
+bash
+Copy
+Edit
+git clone https://github.com/chris-robert-yeslin2006/track-ease-habit-main.git
+cd track-ease-habit-main
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Setup Supabase
+Go to Supabase
+
+Create a new project, enable email auth
+
+Set up the required tables: users, habits, logs, levels
+
+Add your keys to .env:
+
+env
+Copy
+Edit
+VITE_SUPABASE_URL=your-url
+VITE_SUPABASE_ANON_KEY=your-anon-key
+4. Start the app
+bash
+Copy
+Edit
 npm run dev
-```
+🛡️ Security Notes
+Row Level Security (RLS) is enabled in Supabase
 
-**Edit a file directly in GitHub**
+Users can only access and edit their data
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🙋‍♂️ Author
+Chris Robert Yeslin
 
-**Use GitHub Codespaces**
+💼 LinkedIn
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+📧 robertchemist2006@gmail.com
 
-## What technologies are used for this project?
+📷 Instagram – @yeslin_parker
 
-This project is built with:
+💡 Inspiration
+“Like Goku trains every day to surpass his limits, I built TrackEase to track and level up habits one step at a time.”
+– Chris 💥
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1265a437-3b3f-4bb9-b6f9-66cc8cdf31f6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<p align="center">🌱 Start small. Stay consistent. Become legendary. ⚔️</p> ```

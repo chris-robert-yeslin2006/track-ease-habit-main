@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=vercel" />
   </a>
   <img src="https://img.shields.io/badge/Auth-Supabase-3ECF8E?style=for-the-badge&logo=supabase" />
-  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Frontend-Next-61DAFB?style=for-the-badge&logo=next" />
 </p>
 
 ---
@@ -39,7 +39,7 @@
 
 | Layer      | Technology                          |
 |------------|-------------------------------------|
-| Frontend   | React, Tailwind CSS                 |
+| Frontend   | Next, Tailwind CSS                 |
 | Auth       | Supabase Auth                       |
 | Database   | Supabase PostgreSQL + RPC Functions |
 | Hosting    | Vercel                              |
